@@ -1,0 +1,110 @@
+#tl_sidebar hr{
+    border:none;
+    border-top:1px dashed #00FF00;
+}
+
+#tl_sidebar{
+    position: fixed;
+    background-color: rgba(0,0,0,0.4);
+    width:400px;
+    height: 100%;
+    z-index:99;
+    top:0;
+    right:0;
+    padding:20px;
+    font-family: monospace;
+    color:#00FF00;
+    display: flex;
+    flex-direction: column;
+}
+
+#tl_sidebar  #tl_sidebar_header .tl_sidebar_title{
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+#tl_sidebar #tl_sidebar_content{
+    align-self: stretch;
+    height: 100%;
+}
+
+
+#tl_sidebar .tl_sidebar_status{
+    float: right;
+    font-size: 13px;
+    margin-top: 3px;
+}
+
+#tl_sidebar .tl_sidebar_status #tl_sidebar_status_val{
+    color: white;
+}
+
+#tl_sidebar #tl_domain{
+    width: 80%;
+    background: rgba(0,0,0,0.4);
+    border: 0;
+    padding: 10px;
+    font-size: 16px;
+    color: #00FF00;
+}
+
+#tl_sidebar .tl_btn{
+    background: #00FF00;
+    padding: 9px;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    height: 44px;
+    display: inline-block;
+    margin-top: 0;
+    vertical-align: top; height: 44px;
+    display: inline-block;
+    margin-top: 0;
+    vertical-align: top;
+    text-align: center;
+}
+
+#tl_sidebar .tl_btn#tl_set_domain{
+    width: 20%;
+}
+
+#tl_sidebar .tl_btn#tl_stop{
+    width: 50%;
+    background: RED;
+}
+
+#tl_sidebar .tl_btn#tl_stop{
+    width: 50%;
+    background: RED;
+}
+#tl_sidebar .tl_btn#tl_stop.tl_stop_off{
+    background: rgba(255,0,0,0.5);
+}
+
+#tl_sidebar .tl_btn#tl_start{
+    width: 50%;
+}
+#tl_sidebar .tl_btn#tl_start.tl_start_off{
+    background: rgba(0,255,0,0.5);
+}
+
+#tl_sidebar #tl_table{
+    width: 100%;
+}
+
+#tl_sidebar #tl_table th{
+    border-bottom: 1px solid #00FF00;;
+}
+
+#tl_sidebar #tl_table .tl_status{
+    text-align: right;
+}
+
+#tl_sidebar #tl_table .tl_status_ok{
+    color: blue;
+    font-weight:bold;
+}
+
+#tl_sidebar #tl_table .tl_status_ko{
+    color: red;
+}

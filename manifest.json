@@ -1,0 +1,25 @@
+{
+    "name": "Telewin",
+    "version": "0.1",
+    "manifest_version": 2,
+    "homepage_url": "https://github.com/50l3r/telewin",
+    "description": "Extensión para farmear pizzas",
+
+    "browser_action": {
+        "default_title": "Telewin",
+        "default_icon": "icon.png"
+    },
+    "permissions": [
+        "https://*/*",
+        "http://*/*",
+        "tabs",
+        "activeTab"
+    ],
+    "content_scripts": [{
+        "run_at": "document_end",
+        "matches": ["https://www.ganasdetelepizza.es/"],
+        "js": ["js/jquery-3.3.1.min.js","js/jquery.slimscroll.min.js" ,"js/inject.js"],
+        "css":["css/style.css"]
+    }],
+    "web_accessible_resources": [ "*.mp3" ]
+}
